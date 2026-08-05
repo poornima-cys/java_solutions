@@ -24,5 +24,7 @@ class Solution {
         int right = maxDepth(root.right);
 
         return 1+Math.max(left, right);
+        
+        //sc= O(n), TC= O(2n) => O(n)
     }
 }
