@@ -8,8 +8,8 @@
 Array, Two Pointers, Binary Search, Bit Manipulation, Pigeonhole Principle, Floyd's Cycle Finding Algorithm
 
 ### 🚀 Performance
-- **Runtime:** 7 ms
-- **Memory:** 83 MB
+- **Runtime:** 6 ms
+- **Memory:** 82.9 MB
 
 ---
 
