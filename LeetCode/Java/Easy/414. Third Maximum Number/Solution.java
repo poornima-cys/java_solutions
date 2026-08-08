@@ -6,7 +6,7 @@ class Solution {
        }
         PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
         pq.addAll(hs);
-        if(3>nums.length){
+        if(3>hs.size()){
             return pq.poll();
         }
         int k=3;
