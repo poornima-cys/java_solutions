@@ -10,12 +10,13 @@ class Solution {
                     if(matrix[i][k]!=0){
                         matrix[i][k]= Integer.MAX_VALUE;
                     }
+                }
                     for(int l=0;l<row;l++){
                         if(matrix[l][j]!=0){
                             matrix[l][j]=Integer.MAX_VALUE;
                         }
                     }
-                }
+                // }
             }
          }
        } 
