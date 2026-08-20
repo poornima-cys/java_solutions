@@ -11,6 +11,8 @@ class Solution {
             int rem= prefix % k;
             if(hm.containsKey(rem)){
                 count+=hm.get(rem);
+            }
+            if(hm.containsKey(rem)){
                 hm.put(rem,(hm.getOrDefault(rem, 1)+1));
             }
             else{
