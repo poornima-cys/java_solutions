@@ -8,8 +8,8 @@ class Solution {
 
         for(int i=0;i<len;i++){
             prefix+=nums[i];
-            //int rem= ((prefix % k)+k)%k;
-            int rem=prefix%k;
+            int rem= ((prefix % k)+k)%k;
+            // int rem=prefix%k;
             if(hm.containsKey(rem)){
                 count+=hm.get(rem);
             }
