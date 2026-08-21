@@ -8,8 +8,8 @@
 Array, Binary Search, Sliding Window, Prefix Sum
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 2095 ms
+- **Memory:** 57.3 MB
 
 ---
 
