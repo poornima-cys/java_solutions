@@ -17,8 +17,8 @@ class Solution {
        for(int i=0;i<height.length;i++){
         count=count+Math.min(a[i],arr[i])-height[i];
        }
-       System.out.println(Arrays.toString(a));
-        System.out.println(Arrays.toString(arr));
+      // System.out.println(Arrays.toString(a));
+     // System.out.println(Arrays.toString(arr));
       return count;
     }
 }
