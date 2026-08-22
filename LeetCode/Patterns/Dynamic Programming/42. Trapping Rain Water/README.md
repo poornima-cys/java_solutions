@@ -8,8 +8,8 @@
 Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
 
 ### 🚀 Performance
-- **Runtime:** 16 ms
-- **Memory:** 46 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
