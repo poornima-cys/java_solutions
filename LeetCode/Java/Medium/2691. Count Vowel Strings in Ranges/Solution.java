@@ -29,7 +29,7 @@ class Solution {
            
             l+=1;
         }
-        System.out.println(Arrays.toString(prefix));
+        //System.out.println(Arrays.toString(prefix));
         return res;
     }
 }
