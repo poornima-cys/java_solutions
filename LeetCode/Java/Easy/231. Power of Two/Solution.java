@@ -1,5 +1,5 @@
 class Solution {
-   int i=2;
+  // int i=2;
     public boolean check(int n,int i){
         if(i>n){
             return false;
