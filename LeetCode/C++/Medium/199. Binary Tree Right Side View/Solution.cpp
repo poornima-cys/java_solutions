@@ -19,9 +19,9 @@ public:
             ml = max(l, ml);
         }
         traverse(root->right, l + 1, ml, vec);
-        cout << l << ml << endl;
+      //  cout << l << ml << endl;
         traverse(root->left, l + 1, ml, vec);
-        cout << l << ml << endl;
+       // cout << l << ml << endl;
         return;
     }
     vector<int> rightSideView(TreeNode* root) {
