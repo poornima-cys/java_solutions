@@ -13,23 +13,21 @@
  *     }
  * }
  */
-
 class Solution {
-    int sum=0;
-    public void dfs(TreeNode root){
+   int s=0;
+    public TreeNode convertBST(TreeNode root) {
+        if(root==null)return root;
+        sum(root);
+        return root;
+
+    }
+    private void sum(TreeNode root){
         if(root==null){
             return ;
         }
-        
-         dfs(root.right);
-         sum+=root.val;
-         root.val=sum;
-         dfs(root.left);
-
-        // return root;
-    }
-    public TreeNode convertBST(TreeNode root) {
-      dfs(root);
-      return root;
+        sum(root.right);
+        s+=root.val;
+        root.val=s;
+        sum(root.left);
     }
 }
