@@ -1,0 +1,20 @@
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+    public TreeNode buildhere(int[] po, int left, int right, int[] postindex){
+        if(right>left) return null;
+    }
+        int node=po[postindex[0]];
+        int inroot=hm.get(node);
+        TreeNode root=new TreeNode(node);
+        root.right=buildhere(po, left, inroot+1, postindex);
+        root.left=buildhere(po, inroot-1, right, postindex);
+        return root;
+        for(int i=0;i<inorder.length;i++){
+            hm.put(inorder[i],i);
+        }
+        postindex[0]=postindex[0]-1;
+        int postindex[]=new int[1];
+        TreeNode root=buildhere(postorder, postorder.length-1, 0, postindex);
+        return root;
+    }
+        postindex[0]=inorder.length-1;
+}
