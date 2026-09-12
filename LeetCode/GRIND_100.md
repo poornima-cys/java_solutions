@@ -69,7 +69,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [x] [Construct Binary Tree from Preorder and Inorder Traversal](./Java/Medium/105. Construct Binary Tree from Preorder and Inorder Traversal/)
 - [ ] Binary Tree Maximum Path Sum
 - [ ] Path Sum III
-- [x] [Flatten Binary Tree to Linked List](./Plaintext/Medium/114. Flatten Binary Tree to Linked List/)
+- [x] [Flatten Binary Tree to Linked List](./Java/Medium/114. Flatten Binary Tree to Linked List/)
 - [ ] Merge Two Binary Trees
 
 ### 📂 Backtracking & Search
