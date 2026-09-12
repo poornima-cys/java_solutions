@@ -14,25 +14,25 @@
  * }
  */
 class Solution {
-    int total_sum=0;
-    public void dfs(TreeNode root,int sum){
-        
-         sum= sum*10 + root.val;
+    int sum = 0;
 
-     if(root.left==null && root.right==null){
-       total_sum= total_sum+sum;
-     return ;
-     }
-    if(root.left!=null){
-     dfs(root.left,sum);
+    // int total=0;
+    public void suuum(TreeNode root, int total) {
+        if(root==null) return;
+        int val = root.val;
+        total = total * 10 + val;
+        if (root.left == null && root.right == null) {
+            sum += total;
+            return;
+        }
+
+        suuum(root.left, total);
+        suuum(root.right, total);
+
     }
-    if(root.right!=null){
-     dfs(root.right,sum);
-    }
-    }
+
     public int sumNumbers(TreeNode root) {
-        if(root!=null)
-        dfs(root,0);
-        return total_sum;
+        suuum(root, 0);
+        return sum;
     }
 }
