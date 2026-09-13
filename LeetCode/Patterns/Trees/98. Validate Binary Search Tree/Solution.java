@@ -20,7 +20,7 @@ class Solution {
     }
     call(root.left);
     call(root.right);
-    if(root.left.val<=root.val && root.right.val>root.val){
+    if(root.left.val<root.val && root.right.val>root.val){
         return true;
     }
     return false;
