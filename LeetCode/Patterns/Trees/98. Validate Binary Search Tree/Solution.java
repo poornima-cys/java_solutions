@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    public boolean call(TreeNode root, int min, int max){
+    public boolean call(TreeNode root, long min, long max){
     if(root==null){
         return true;
     }
@@ -26,6 +26,6 @@ class Solution {
     }
     
     public boolean isValidBST(TreeNode root) {
-     return call(root, Integer.MIN_VALUE, Integer.MAX_VALUE);   
+     return call(root, Long.MIN_VALUE, Long.MAX_VALUE);   
     }
 }
