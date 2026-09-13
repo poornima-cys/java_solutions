@@ -16,7 +16,7 @@
 class Solution {
     public boolean call(TreeNode root){
     if(root.left==null || root.right==null){
-        return true;
+        return false;
     }
     call(root.left);
     call(root.right);
