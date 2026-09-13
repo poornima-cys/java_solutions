@@ -3,7 +3,7 @@
 Track your progress on the Striver's SDE Sheet top interview problems.
 
 ## Progress
-- **Completed:** 5 / 76 (6.6%)
+- **Completed:** 6 / 76 (7.9%)
 
 ---
 
@@ -85,7 +85,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Binary Tree Maximum Path Sum
 - [x] [Construct Binary Tree from Preorder and Inorder Traversal](./Java/Medium/105. Construct Binary Tree from Preorder and Inorder Traversal/)
 - [x] [Symmetric Tree](./Java/Easy/101. Symmetric Tree/)
-- [ ] Validate Binary Search Tree
+- [x] [Validate Binary Search Tree](./Java/Medium/98. Validate Binary Search Tree/)
 - [ ] Lowest Common Ancestor of a Binary Search Tree
 - [ ] Kth Smallest Element in a BST
 - [ ] Serialize and Deserialize Binary Tree
