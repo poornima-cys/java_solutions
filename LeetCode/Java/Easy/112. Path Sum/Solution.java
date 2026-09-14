@@ -17,7 +17,7 @@ class Solution {
     public boolean help(TreeNode root, int target){
         if(root==null) return false;
         target-=root.val;
-        if(target==0)return true;
+        if(target==0 && root.left==null && root.right==null)return true;
         boolean left=help(root.left,target);
         boolean right=help(root.right,target);
         return left|| right;
