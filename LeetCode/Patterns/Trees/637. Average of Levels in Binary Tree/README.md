@@ -1,6 +1,6 @@
 # 📝 637. Average of Levels in Binary Tree (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/?envType=study-plan-v2&envId=top-interview-150)
+🔗 [Problem Link](https://leetcode.com/problems/average-of-levels-in-binary-tree/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Tree, Depth-First Search, Breadth-First Search, Binary Tree
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 2 ms
+- **Memory:** 48.2 MB
 
 ---
 
