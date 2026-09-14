@@ -31,7 +31,7 @@ class Solution {
             int c=0;
             for(int i=0;i<size;i++){
                 Node node= q.poll();
-                System.out.println (node.val);
+               // System.out.println (node.val);
                 if(c<size-1){
                     node.next=q.peek();
                 }
