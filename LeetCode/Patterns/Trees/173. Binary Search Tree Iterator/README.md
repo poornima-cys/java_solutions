@@ -1,6 +1,6 @@
 # 📝 173. Binary Search Tree Iterator (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/binary-search-tree-iterator/?envType=study-plan-v2&envId=top-interview-150)
+🔗 [Problem Link](https://leetcode.com/problems/binary-search-tree-iterator/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 16 ms
+- **Memory:** 50.2 MB
 
 ---
 
