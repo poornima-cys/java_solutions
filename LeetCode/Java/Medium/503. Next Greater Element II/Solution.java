@@ -1,31 +1,31 @@
 class Solution {
+    
     public int[] nextGreaterElements(int[] nums) {
-        
-        int n = nums.length;
-        int[] result = new int[n];
-        Arrays.fill(result, -1); // Initialize all elements with -1
-        
-        Stack<Integer> stack = new Stack<>(); // Stores indices of elements
-        
-        // Traverse the array twice to simulate the circular behavior
-        for (int i = 0; i < 2 * n; i++) {
-            int currentNum = nums[i % n];
-            
-            // Maintain a monotonic decreasing stack
-            // If current element is greater than the element at the stack's top index,
-            // then current element is the Next Greater Element for that top index.
-            while (!stack.isEmpty() && nums[stack.peek()] < currentNum) {
-                result[stack.pop()] = currentNum;
+        Stack<Integer> stk=new Stack<>();
+        int n=nums.length;
+       
+        int[] res=new int[nums.length];
+         Arrays.fill(res, -1);
+        //stk.push(0);
+        for(int i=0;i<2*n;i++){
+            int current_element=nums[i%n];
+            int index=i%n;
+            if(stk.isEmpty()){
+                stk.push(index);
             }
-            
-            // Only push indices from the first pass to avoid rewriting or over-processing
-            if (i < n) {
-                stack.push(i);
+            else{
+                if(current_element<=nums[stk.peek()]){
+                    stk.push(index);
+                }
+                else{
+                    while(!stk.isEmpty() && nums[stk.peek()]<current_element){
+                        res[stk.peek()]=current_element;
+                        stk.pop();
+                    }
+                    stk.push(index);
+                }
             }
         }
-        
-        return result;
+        return res;
     }
 }
-
-    
