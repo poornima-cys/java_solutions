@@ -1,60 +1,59 @@
-class Cell{
-    int x;
-    int y;
-    public Cell(int x, int y){
+class Pair{
+    int x, y;
+    Pair(int x, int y){
         this.x=x;
         this.y=y;
     }
 }
 class Solution {
-    public boolean isValid(int x, int y ,int rows,int cols){
-        if(x>=0 && x<rows && y<cols && y>=0 ){
-            return true;
+    public void dircheck(boolean[][] v, char[][] c, Queue<Pair>q, int row, int col){
+        int dir[][]=new int[][] {{0,1},{0,-1},{-1,0},{1,0}};
+        while(!q.isEmpty()){
+            Pair curr=q.poll();
+            int x=curr.x;
+            int y=curr.y;
+            for(int[] temp: dir){
+                int newx=x+temp[0];
+                int newy=y+temp[1];
+                if(newx>=0 && newx<row && newy>=0 && newy<col){
+                    if(v[newx][newy]!=true && c[newx][newy]=='O'){
+                    c[newx][newy]='1';
+                    v[newx][newy]=true;
+                    q.add(new Pair(newx, newy));
+                }
+                }
+            }
         }
-        return false;
+
     }
-
     public void solve(char[][] board) {
-        int rows=board.length;
-        int cols=board[0].length;
-
-        int directions[][]=new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
-        Queue<Cell> q=new LinkedList<>();
-
-        for(int i=0;i<rows;i++){
-            for(int j=0; j<cols; j++){
-                if(i==0 || i==rows-1 || j==0|| j==cols-1){
+        Queue<Pair>q=new LinkedList<>();
+       
+        int row=board.length;
+        int col=board[0].length;
+         boolean[][] v=new boolean[row][col];
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if(i==0||(i==row-1)||j==0||j==col-1){
                     if(board[i][j]=='O'){
-                        q.add(new Cell(i,j));
+                        q.add(new Pair(i,j));
+                        v[i][j]=true;
+                        board[i][j]='1';
                     }
                 }
             }
         }
-        while(!q.isEmpty()){
-            Cell node=q.poll();
-            int newX=node.x;
-            int newY=node.y;
-            board[newX][newY] = 'B';
-            for(int[] arr:directions){
-                int x=newX + arr[0];
-                int y=newY + arr[1];
-                if(isValid(x, y, rows, cols) && board[x][y]=='O'){
-                    q.add(new Cell(x, y));
-                    board[x][y] = 'B';
-                }
-            }
-        }
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                if(board[i][j]=='B'){
-                    board[i][j] ='O';
+        dircheck(v, board, q, row, col);
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if(board[i][j]=='1'){
+                    board[i][j]='O';
                 }
                 else{
-                    board[i][j] ='X';
+                    board[i][j]='X';
                 }
-               
             }
         }
+        //return board;
     }
-
 }
