@@ -45,7 +45,10 @@ class Solution {
         boolean visited[][]=new boolean[row][col];
        
         dirs(grid, q, visited, row, col, distance);
-        return distance[row-1][col-1]+1;
+         if(distance[row-1][col-1]!=Integer.MAX_VALUE)
+         return distance[row-1][col-1]+1;
+         
+         return -1;
 
     }
 }
