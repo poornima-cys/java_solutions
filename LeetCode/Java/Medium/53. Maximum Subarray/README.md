@@ -1,6 +1,6 @@
 # 📝 53. Maximum Subarray (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/maximum-subarray/?envType=study-plan-v2&envId=top-interview-150)
+🔗 [Problem Link](https://leetcode.com/problems/maximum-subarray/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Array, Divide and Conquer, Dynamic Programming
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 1 ms
+- **Memory:** 77.1 MB
 
 ---
 
