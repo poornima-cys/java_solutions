@@ -1,0 +1,22 @@
+                    c++;
+                    q.add(new Pair(newx, newy));
+                    grid[newx][newy]=0;
+                if(newx<row && newx>=0 && newy>=0 && newy<col && grid[newx][newy]==1){
+                int newy=y+i[1];
+                int newx=x+i[0];
+            for(int i[]: dir){
+            int y=p.y;
+            int x=p.x;
+            Pair p=q.poll();
+        while(!q.isEmpty()){
+        int c=0;
+    public int traverse(int grid[][], Queue<Pair>q, int row, int col){
+class Solution {
+}
+    }
+        int dir[][]= new int[][] {{0,1},{0,-1},{1,0},{-1,0}};
+        this.x=x;
+        this.y=y;
+    Pair(int x, int y){
+    int x, y;
+class Pair{
