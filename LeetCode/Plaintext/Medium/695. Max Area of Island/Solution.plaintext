@@ -1,23 +1,23 @@
-    public int maxAreaOfIsland(int[][] grid) {
-    }
-        return c;
-        }
-            }
-                   
-                }
                     q.add(new Pair(newx, newy));
-                     c++;grid[newx][newy]=0;
+                    grid[newx][newy]=0;
                 if(newx<row && newx>=0 && newy>=0 && newy<col && grid[newx][newy]==1){
                 int newy=y+i[1];
-                int newx=x+i[0];
-            for(int i[]: dir){
             int y=p.y;
-            int x=p.x;
-              Pair p=q.poll();
-        int dir[][]= new int[][] {{0,1},{0,-1},{1,0},{-1,0}};
+            for(int i[]: dir){
+                int newx=x+i[0];
         while(!q.isEmpty()){
+            Pair p=q.poll();
+            int x=p.x;
     public int traverse(int grid[][], Queue<Pair>q, int row, int col){
         int c=0;
-class Solution {
+        int dir[][]= new int[][] {{0,1},{0,-1},{1,0},{-1,0}};
+            c++;
+                   
+                }
+            }
+        }
+        return c-1;
+    }
+    public int maxAreaOfIsland(int[][] grid) {
         int res=0;
         int max=Integer.MIN_VALUE;
