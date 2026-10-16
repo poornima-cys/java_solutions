@@ -1,0 +1,23 @@
+       }
+        else if(i.equals(".")){
+            continue;
+        }
+        else{
+            stk.push(i);
+        }
+        // else{
+        //     stk.push(i);
+        // }
+        }
+        String res="";
+       while(!stk.isEmpty()){
+        String temp=stk.pop();
+        temp="/" + temp;
+        res=temp+res;
+       }
+
+       // System.out.println(Arrays.toString(str));
+    
+        if(stk.isEmpty()){
+            return "/";
+        }
