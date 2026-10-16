@@ -1,23 +1,16 @@
-       }
-        else if(i.equals(".")){
-            continue;
-        }
-        else{
-            stk.push(i);
-        }
-        // else{
-        //     stk.push(i);
         // }
         }
-        String res="";
-       while(!stk.isEmpty()){
-        String temp=stk.pop();
-        temp="/" + temp;
-        res=temp+res;
-       }
-
-       // System.out.println(Arrays.toString(str));
-    
-        if(stk.isEmpty()){
-            return "/";
+        //     stk.push(i);
+        // else{
         }
+       Stack<String> stk=new Stack<>();
+       for(String i: str){
+        if(i.equals("..") ){
+            if(!stk.isEmpty()){
+            stk.pop();
+    public String simplifyPath(String path) {
+       
+        String str[]=path.replaceFirst("^/+","").split("/+");
+        //String res="/";
+class Solution {
+        else if(i.equals(".")){
