@@ -1,8 +1,8 @@
 # 📝 392. Is Subsequence (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=top-interview-150)
+🔗 [Problem Link](https://leetcode.com/problems/is-subsequence/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Plaintext-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
 ### 💡 Tags
 Two Pointers, String, Dynamic Programming
