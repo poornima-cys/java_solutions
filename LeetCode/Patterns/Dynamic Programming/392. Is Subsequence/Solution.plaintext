@@ -9,6 +9,11 @@ class Solution {
             if(j==s.length()){
                 return true;
             }
-    }
         return false;
+        if(s==""){
+            return true;
+        }
+    }
+        if(t=="" && s=="")return true;
+        if(t=="")return false;
 }
