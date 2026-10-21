@@ -8,6 +8,9 @@ class Solution {
         if(hm.containsKey(n)){
             return hm.get(n);
         }
+        else{
+            hm.put(n,stairs(n-1)+ stairs(n-2));
+        }
         return stairs(n-1)+ stairs(n-2);
     }
     public int climbStairs(int n) {
