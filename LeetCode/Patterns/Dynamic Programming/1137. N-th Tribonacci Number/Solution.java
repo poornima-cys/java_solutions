@@ -1,0 +1,14 @@
+class Solution {
+    public int tribonacci(int n) {
+        int t0=0, t1=1, t2=1;
+        int res=0;
+        for(int i=2;i<n;i++){
+             res=t0+ t1 + t2;
+            int temp=t2;
+            t2=res;
+            t0=t1;
+            t1=temp;
+        }
+        return res;
+    }
+}
