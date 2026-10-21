@@ -18,6 +18,7 @@ class Solution {
     public int rob(int[] nums) {
         int n=nums.length-1;
         hm.put(0,nums[0]);
+        if(nums.length>1)
         hm.put(1, Math.max(nums[0], nums[1]));
         return f(nums,n);
     }
