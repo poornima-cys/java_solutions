@@ -1,6 +1,6 @@
 # 📝 1402. Reducing Dishes (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/reducing-dishes/)
+🔗 [Problem Link](https://leetcode.com/problems/reducing-dishes)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
