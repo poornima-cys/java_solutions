@@ -1,5 +1,5 @@
 class Solution {
-    int bfs(int[][] grid, Queue<int[]>q, int row, int col, int sum){
+    long bfs(int[][] grid, Queue<int[]>q, int row, int col, long sum){
         int dir[][]=new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
         while(!q.isEmpty()){
             int[] temp=q.poll();
@@ -20,15 +20,15 @@ class Solution {
     public int countIslands(int[][] grid, int k) {
         int row=grid.length;
         int col=grid[0].length;
-        int res=0;
+        long res=0;
         int count=0;
         Queue<int[]>q=new LinkedList<>();
         for(int i=0;i<row;i++){
             for(int j=0;j<col;j++){
                 if(grid[i][j]!=0){
-                    int sum=0;
+                    long sum=0;
                     q.add(new int[]{i,j});
-                    int curr=grid[i][j];
+                    long curr=grid[i][j];
                     grid[i][j]=0;
                     res=bfs(grid, q, row, col, sum+curr);
                     if(res%k==0){count++;}
