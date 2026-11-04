@@ -1,14 +1,26 @@
 class Solution {
-    public int f(int i, int j, int c, String s1, String s2){
+    
+    public int f(int i, int j, String s1, String s2, int[][] dp){
         if(i>=s1.length() || j>=s2.length()){
-            return c;
+            return 0;
+        }
+        if(dp[i][j]!=-1){
+            return dp[i][j];
         }
         if(s1.charAt(i)==s2.charAt(j)){
-            return f(i+1,j+1,c+1,s1, s2);
+            dp[i][j]= 1+f(i+1,j+1,s1, s2, dp);
         }
-        return Math.max(f(i, j+1,c, s1, s2), f(i+1, j,c, s1,s2));
+        else{
+        dp[i][j]= Math.max(f(i, j+1, s1, s2, dp), f(i+1, j, s1,s2, dp));
+        }
+        return dp[i][j];
     }
     public int longestCommonSubsequence(String text1, String text2) {
-        return f(0,0,0,text1, text2);
+        int dp[][]=new int[text1.length()][text2.length()];
+        for(int i[]:dp){
+            Arrays.fill(i, -1);
+        }
+        return f(0,0,text1, text2,dp);
+        
     }
 }
