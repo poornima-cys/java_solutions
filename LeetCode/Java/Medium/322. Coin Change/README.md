@@ -8,8 +8,8 @@
 Array, Dynamic Programming, Breadth-First Search, Knapsack Problem, Complete Knapsack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 30 ms
+- **Memory:** 47.6 MB
 
 ---
 
@@ -21,7 +21,7 @@ Return the  **fewest**  number of coins that you need to make up that amount. If
 
 You may assume that you have an infinite number of each kind of coin.
 
-OriginalJava **Example 1:**
+**Example 1:**
 
 ```
 Input: coins = [1,2,5], amount = 11
